@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Members — ANSA</title>
-  <meta name="description" content="ANSA会員専用エリア。会員コンテンツ・年次交流会情報へのアクセス。">
+  <title>Sodales — 会員 · ANSA</title>
+  <meta name="description" content="ANSA会員専用エリア。会員コンテンツ・年次集会。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -14,139 +17,131 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">ANSA</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About AIQ</a></li>
-      <li><a href="admission.html">Admission</a></li>
-      <li><a href="members.html" class="active">Members</a></li>
+      <li><a href="index.html">Domvs</a></li>
+      <li><a href="about.html">Scientia</a></li>
+      <li><a href="admission.html">Admissio</a></li>
+      <li><a href="members.html" class="active">Sodales</a></li>
     </ul>
     <a href="admission.html" class="nav-cta">Apply</a>
   </div>
 </nav>
 
 <div class="page-header">
-  <span class="page-header-label">Members Only</span>
+  <svg class="emblem emblem-md" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+  <span class="page-header-roman">Sodales</span>
   <h1>会員専用エリア</h1>
-  <p>このエリアはANSA会員のみアクセスできます。</p>
+  <p class="lead">このエリアは、ANSA会員のみが立ち入ることを許される。</p>
 </div>
 
 <!-- LOGIN -->
 <section>
-  <div class="section-inner">
-    <div style="max-width: 420px; margin: 0 auto;">
-
-      <div id="login-form-area">
-        <div style="background: var(--bg-2); border: 1px solid var(--border); padding: 40px; margin-bottom: 0;">
-          <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px;">Member Login</p>
-
-          <form id="login-form" style="display: grid; gap: 18px;">
-            <div>
-              <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">会員番号またはメールアドレス</label>
-              <input type="text" required placeholder="ANSA-0001 または your@email.com" style="width: 100%; background: var(--bg-3); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none;">
-            </div>
-            <div>
-              <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">パスワード</label>
-              <input type="password" required placeholder="••••••••••" style="width: 100%; background: var(--bg-3); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none;">
-            </div>
-            <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; padding: 16px; margin-top: 8px;">ログイン</button>
-          </form>
-
-          <p style="font-size: 11px; color: var(--text-4); margin-top: 20px; text-align: center;">
-            パスワードを忘れた場合は <a href="mailto:contact@ansa-society.jp" style="color: var(--gold-dim); border-bottom: 1px solid var(--border);">こちら</a>
-          </p>
-        </div>
+  <div class="section-inner-narrow">
+    <div id="login-form-area" style="max-width:440px;margin:0 auto;">
+      <div class="login-card">
+        <p class="login-card-label">Ingressus — 会員ログイン</p>
+        <form id="login-form" class="form-grid">
+          <div>
+            <label class="field-label">会員番号またはメール</label>
+            <input type="text" required placeholder="ANSA-0001 / your@email.com">
+          </div>
+          <div>
+            <label class="field-label">パスワード</label>
+            <input type="password" required placeholder="••••••••••">
+          </div>
+          <button type="submit" class="seal-btn" style="width:100%;padding:16px;margin-top:6px;">ログイン</button>
+        </form>
+        <p style="font-size:0.85rem;color:var(--parch-3);margin-top:22px;text-align:center;">
+          パスワードを忘れた場合は <a href="mailto:contact@ansa-society.jp" class="link-gold" style="font-size:0.85rem;">こちら</a>
+        </p>
       </div>
 
-      <!-- Non-member message -->
-      <div style="border-top: 1px solid var(--border-2); padding: 28px 0 0; margin-top: 32px; text-align: center;">
-        <p style="font-size: 12px; color: var(--text-4); line-height: 1.8;">
-          会員でない方は、まず<a href="admission.html" style="color: var(--gold); border-bottom: 1px solid var(--gold-dim);">審査に申し込む</a>ことができます。<br>
-          合格者のみがこのエリアにアクセスできます。
+      <div style="border-top:1px solid var(--line-2);padding-top:28px;margin-top:36px;text-align:center;">
+        <p style="font-size:0.95rem;color:var(--parch-3);line-height:1.85;">
+          会員でない方は、まず<a href="admission.html" class="link-gold" style="font-size:0.95rem;">審査に申し込む</a>ことができる。<br>
+          合格した者のみが、この門をくぐる。
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PREVIEW OF MEMBER CONTENT (blurred/teaser) -->
+<!-- MEMBER CONTENT TEASER -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Member Content</span>
-    <p style="font-size: 13px; color: var(--text-4); margin-bottom: 32px; max-width: 560px;">以下は会員コンテンツの一部です。ログイン後に全文をお読みいただけます。</p>
+    <span class="section-label">Acta Sodalium — 会員の記録</span>
+    <p style="color:var(--parch-3);margin-bottom:36px;max-width:580px;">以下は会員が著した記録の一部である。ログインの後、全文を読むことができる。会員が書き、会員のみが読む。</p>
 
-    <div style="display: grid; gap: 1px; background: var(--border);">
-
-      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
-        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Protocol &nbsp;·&nbsp; 会員 #0003</p>
-        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">ラパマイシン間欠投与6ヶ月の記録——血液データと体感の変化</h3>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
-          2025年11月より週1回2mgの間欠投与を開始した。当初の懸念であった免疫抑制効果については、CRP・好中球数の推移から……投与翌日の倦怠感は3週目以降に消失。VO₂maxは投与前54.2から……mTORC2への影響を最小化するため……
-        </p>
+    <div class="teaser-stack">
+      <div class="teaser">
+        <div class="teaser-veil"></div>
+        <p class="teaser-tag">Protocollum · Sodalis №0003</p>
+        <h3>ラパマイシン間欠投与 六ヶ月の記録 —— 血液データと体感の変化</h3>
+        <p class="teaser-body">2025年11月より週1回2mgの間欠投与を開始した。当初の懸念であった免疫抑制効果については、CRP・好中球数の推移から……投与翌日の倦怠感は3週目以降に消失。VO₂maxは投与前54.2から……mTORC2への影響を最小化するため……</p>
       </div>
-
-      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
-        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Analysis &nbsp;·&nbsp; 会員 #0001</p>
-        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">Horvath時計 vs DunedinPACE——どちらが「老化速度」を正確に反映するか</h3>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
-          エピジェネティック時計の比較において、静的な生物学的年齢を推定するHorvathモデルと、老化「速度」を測定するDunedinPACEは……介入の効果検証には後者が優れる理由として……縦断的なデータを持たない場合における解釈の限界……
-        </p>
+      <div class="teaser">
+        <div class="teaser-veil"></div>
+        <p class="teaser-tag">Analysis · Sodalis №0001</p>
+        <h3>Horvath時計 と DunedinPACE —— いずれが「老化速度」を正確に映すか</h3>
+        <p class="teaser-body">エピジェネティック時計の比較において、静的な生物学的年齢を推定するHorvathモデルと、老化「速度」を測定するDunedinPACEは……介入の効果検証には後者が優れる理由として……縦断的データを持たぬ場合の解釈の限界……</p>
       </div>
-
-      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
-        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Biomarker &nbsp;·&nbsp; 会員 #0007</p>
-        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">48歳・男性のバイオマーカー推移——NMN・断食・筋トレ介入から18ヶ月</h3>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
-          介入開始時のHbA1c 5.8%→現在5.2%。IGF-1は136→171 ng/mL。テストステロン総量……週3回の筋力トレーニングと週1回の36時間断食を組み合わせた場合のCRP変動は……
-        </p>
+      <div class="teaser">
+        <div class="teaser-veil"></div>
+        <p class="teaser-tag">Biomarcor · Sodalis №0007</p>
+        <h3>四十八歳・男性のバイオマーカー推移 —— NMN・断食・筋力介入 十八ヶ月</h3>
+        <p class="teaser-body">介入開始時のHbA1c 5.8%→現在5.2%。IGF-1は136→171 ng/mL。テストステロン総量……週3回の筋力トレーニングと週1回の36時間断食を組み合わせた場合のCRP変動は……</p>
       </div>
-
     </div>
 
-    <div style="text-align: center; margin-top: 32px;">
-      <a href="#login-form-area" class="btn-primary" onclick="document.querySelector('#login-form-area input').focus(); return false;">ログインして全文を読む</a>
+    <div class="center mt-40">
+      <a href="#login-form-area" class="seal-btn" onclick="document.querySelector('#login-form-area input').focus(); return false;">ログインして全文を読む</a>
     </div>
   </div>
 </section>
 
-<!-- ANNUAL GATHERING TEASER -->
+<!-- ANNUAL GATHERING -->
 <section>
-  <div class="section-inner">
-    <span class="section-label">Annual Gathering</span>
-    <div style="border: 1px solid var(--border); padding: 40px; max-width: 600px;">
-      <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-4); margin-bottom: 16px;">Next Event</p>
-      <h2 style="font-size: 20px; font-weight: normal; color: var(--gold); margin-bottom: 16px;">ANSA Annual Gathering 2026</h2>
-      <p style="font-size: 13px; color: var(--text-3); line-height: 1.9; margin-bottom: 20px;">
-        詳細は会員のみに案内されます。日時・場所・スピーカーの情報は、会員登録メールアドレスへ送付されます。
-      </p>
-      <p style="font-size: 11px; color: var(--text-4);">参加費 ¥8,000〜（会場・規模により変動） &nbsp;·&nbsp; 会員限定</p>
+  <div class="section-inner-narrow">
+    <span class="section-label">Conventus Annuus — 年次集会</span>
+    <div class="theme-card" style="text-align:left;">
+      <p class="theme-card-label">Proximus Conventus — 次回</p>
+      <p class="theme-card-text" style="font-size:24px;">ANSA Annual Gathering · MMXXVI</p>
+      <p style="font-size:1rem;color:var(--parch-3);line-height:1.9;margin-bottom:18px;">詳細は会員のみに案内される。日時・場所・登壇者の情報は、会員登録の宛先へ送られる。</p>
+      <p class="theme-card-meta">参加費 ¥8,000〜（会場・規模により変動） · 会員限定</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <a href="index.html" class="footer-logo">ANSA</a>
-    <span class="footer-text">© 2026 Anti-Aging Intelligence Society. All rights reserved.</span>
-    <ul class="footer-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="admission.html">Admission</a></li>
-      <li><a href="members.html">Members</a></li>
-    </ul>
-  </div>
+  <svg class="emblem emblem-md footer-emblem" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+  <div class="footer-name">ANSA</div>
+  <p class="footer-latin">Per scientiam, ad iuventutem.</p>
+  <ul class="footer-links">
+    <li><a href="about.html">Scientia</a></li>
+    <li><a href="admission.html">Admissio</a></li>
+    <li><a href="members.html">Sodales</a></li>
+  </ul>
+  <p class="footer-copy">© MMXXVI · Anti-Aging Intelligence Society · Omnia iura reservata</p>
 </footer>
-
-<style>
-  input:focus { border-color: var(--gold-dim); }
-  input::placeholder { color: var(--text-4); }
-  button[type="submit"]:hover { background: var(--gold); color: var(--bg); }
-</style>
 
 <script>
   document.getElementById('login-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: Supabase auth
     alert('現在、会員システムを準備中です。');
   });
 </script>

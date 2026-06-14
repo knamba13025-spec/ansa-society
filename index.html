@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANSA — Anti-Aging Intelligence Society</title>
-  <meta name="description" content="ANSAは、Anti-Aging Intelligence Quotient（AIQ）の上位2%のみが入会を許可される知性団体です。">
+  <title>ANSA — Societas Intelligentiae Anti-Senescentis</title>
+  <meta name="description" content="ANSA — Anti-Aging Intelligence Society。AIQ上位2%のみが入会を許される知性結社。">
   <meta property="og:title" content="ANSA — Anti-Aging Intelligence Society">
-  <meta property="og:description" content="ANSAは、Anti-Aging Intelligence Quotient（AIQ）の上位2%のみが入会を許可される知性団体です。">
+  <meta property="og:description" content="若さとは、偶然ではなく、知性によって設計されるものである。AIQ上位2%のみが入会を許される知性結社。">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -15,177 +18,223 @@
 
 <nav>
   <div class="nav-inner">
-    <span class="nav-logo">ANSA</span>
+    <a href="index.html" class="nav-logo">ANSA</a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About AIQ</a></li>
-      <li><a href="admission.html">Admission</a></li>
-      <li><a href="members.html">Members</a></li>
+      <li><a href="index.html" class="active">Domvs</a></li>
+      <li><a href="about.html">Scientia</a></li>
+      <li><a href="admission.html">Admissio</a></li>
+      <li><a href="members.html">Sodales</a></li>
     </ul>
     <a href="admission.html" class="nav-cta">Apply</a>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- ════════ HERO ════════ -->
 <section class="hero" style="border-top: none;">
-  <p class="hero-eyebrow">Est. 2026 &nbsp;·&nbsp; Japan</p>
-  <div class="hero-emblem">
-    <span class="hero-logo">ANSA</span>
-    <span class="hero-tagline">Anti-Aging Intelligence Society</span>
-  </div>
-  <p class="hero-headline">
-    ANSAは、Anti-Aging Intelligence Quotient（AIQ）の<br>
-    上位2%に位置する者のみが入会を許可される知性団体です。
-  </p>
-  <div class="hero-divider"></div>
+  <p class="hero-eyebrow">Founded · MMXXVI · By Merit Alone</p>
+
+  <!-- EMBLEM — Ouroboros -->
+  <svg class="emblem emblem-xl" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ANSA 紋章 — ウロボロス">
+    <defs>
+      <path id="arc-top" d="M 28,120 A 92,92 0 0 1 212,120" />
+      <path id="arc-bottom" d="M 212,120 A 92,92 0 0 1 28,120" />
+    </defs>
+
+    <!-- crowning star -->
+    <polygon class="emblem-fill" points="120,3 122.6,12.1 132,12.1 124.2,18 126.9,27.1 120,21.4 113.1,27.1 115.8,18 108,12.1 117.4,12.1" />
+
+    <!-- outer double ring -->
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="107" stroke-width="0.8" />
+
+    <!-- circular inscriptions -->
+    <text class="emblem-text"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">· SOCIETAS · INTELLIGENTIAE ·</textPath></text>
+    <text class="emblem-text"><textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">· ANTI · SENESCENTIS ·</textPath></text>
+
+    <!-- inner ring -->
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <circle class="emblem-line" cx="120" cy="120" r="78" stroke-width="0.6" stroke-dasharray="1 4" />
+
+    <!-- Ouroboros -->
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <!-- head -->
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle class="emblem-snake" cx="135" cy="64" r="0" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <!-- tail tucked into mouth -->
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+
+    <!-- central pentagram -->
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+
+  <h1 class="hero-wordmark">ANSA</h1>
+  <p class="hero-subname">Anti-Aging Intelligence Society</p>
+
+  <p class="hero-latin">Per scientiam, ad iuventutem.</p>
+  <p class="hero-latin-trans">知を通じて、若さへ</p>
+
+  <div class="ornament"><span class="ornament-diamond"></span></div>
+
   <div class="hero-stats">
     <div>
-      <span class="hero-stat-num">2<span style="font-size:20px">%</span></span>
-      <span class="hero-stat-label">Admission Rate</span>
+      <span class="hero-stat-num">II<span style="font-size:20px">%</span></span>
+      <span class="hero-stat-label">Admitted</span>
     </div>
     <div>
-      <span class="hero-stat-num">100</span>
+      <span class="hero-stat-num">C</span>
       <span class="hero-stat-label">Total Score</span>
     </div>
     <div>
-      <span class="hero-stat-num">AI</span>
-      <span class="hero-stat-label">Evaluated</span>
+      <span class="hero-stat-num">MMXXVI</span>
+      <span class="hero-stat-label">Founded</span>
     </div>
   </div>
+
+  <span class="hero-scroll">↓ Descend</span>
 </section>
 
-<!-- PHILOSOPHY -->
+<!-- ════════ I. PHILOSOPHY ════════ -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Philosophy</span>
-    <p class="philosophy-quote">
-      「若さとは、偶然ではなく、<br>知性によって設計されるものである。」
-    </p>
+    <span class="section-roman">I</span>
+    <p class="quote-grand">「若さとは、偶然ではなく、<br>知性によって設計されるものである。」</p>
+    <div class="ornament"><span class="ornament-diamond"></span></div>
     <div class="principles">
       <div class="principle">
-        <span class="principle-icon">I</span>
-        <h3>Science First</h3>
-        <p>ANSAが認める根拠はエビデンスのみです。体験談、印象、流行——これらはいかなる文脈においても評価対象とはなりません。</p>
+        <span class="principle-numeral">— I —</span>
+        <h3>Scientia Prima</h3>
+        <p>科学を第一とする。ANSAが認める根拠はエビデンスのみ。体験談、印象、流行は、いかなる文脈でも評価対象とならない。</p>
       </div>
       <div class="principle">
-        <span class="principle-icon">II</span>
-        <h3>Exclusivity by Merit</h3>
-        <p>入会は権利ではありません。知識と実践の深さによってのみ、資格が決まります。金銭的なバリアは存在しません。</p>
+        <span class="principle-numeral">— II —</span>
+        <h3>Meritum Solum</h3>
+        <p>資格は功績のみによる。入会は権利ではなく、知識と実践の深さによって証明される。金銭は扉を開かない。</p>
       </div>
       <div class="principle">
-        <span class="principle-icon">III</span>
-        <h3>Embodied Knowledge</h3>
-        <p>ANSAは「知っている者」を求めません。「実践し、身体に反映させている者」を求めます。知識と身体は一致していなければなりません。</p>
+        <span class="principle-numeral">— III —</span>
+        <h3>Scientia Incarnata</h3>
+        <p>知は身体に宿る。ANSAは「知る者」ではなく「実践し、肉体に反映させた者」を求める。知識と身体は一致せねばならない。</p>
       </div>
       <div class="principle">
-        <span class="principle-icon">IV</span>
-        <h3>Irreverence</h3>
-        <p>老化を受け入れる文化に敬意は払いません。老化は解くべき問題であり、ANSAはその解に向けて最も知的に取り組む者たちの集合体です。</p>
+        <span class="principle-numeral">— IV —</span>
+        <h3>Senectus Solvenda</h3>
+        <p>老いは解かれるべき問題である。それを甘受する文化に、我々は敬意を払わない。最も知的に挑む者たちの結社である。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AIQ -->
+<!-- ════════ II. AIQ ════════ -->
 <section>
   <div class="section-inner">
-    <span class="section-label">About AIQ</span>
-    <div class="aiq-intro">
-      <div class="aiq-text">
-        <h2>Anti-Aging Intelligence Quotient</h2>
-        <p>AIQはANSA独自の評価指標です。「何を知っているか」だけでなく、「実際に実践し、身体に反映されているか」まで測定します。</p>
-        <p>IQと異なり、AIQは後天的に鍛えることができます。しかし、上位2%への到達を、誰もが軽々しく達成できるわけではありません。</p>
-        <p style="margin-top: 20px;"><a href="about.html" style="font-size: 12px; letter-spacing: 2px; color: var(--gold); border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px;">AIQの詳細を見る →</a></p>
+    <span class="section-roman">II</span>
+    <div class="aiq-grid">
+      <div>
+        <h2 class="section-title">Anti-Aging<br>Intelligence Quotient</h2>
+        <p class="lead">AIQはANSA独自の評価指標。「何を知るか」だけでなく、「実践し、身体に反映させているか」までを測る。</p>
+        <p style="margin-top:16px;">IQと異なり、AIQは後天的に鍛えられる。しかし上位2%への到達は、誰もが軽々しく達せられるものではない。</p>
+        <p class="mt-40"><a href="about.html" class="link-gold">AIQの体系を見る →</a></p>
       </div>
-      <div class="aiq-score-display">
-        <span class="aiq-score-num">130</span>
-        <span class="aiq-score-label">Minimum AIQ Score</span>
-        <p class="aiq-score-sub" style="margin-top: 12px; font-size: 12px; color: var(--text-4);">当年度の全受験者における上位2%相当</p>
+      <div class="aiq-seal">
+        <div class="aiq-seal-num">130</div>
+        <div class="aiq-seal-label">Minimum AIQ</div>
+        <p class="theme-card-meta" style="margin-top:14px;">当年度受験者における上位2%相当</p>
       </div>
     </div>
-    <div class="aiq-categories">
-      <div class="aiq-cat">
-        <span class="aiq-cat-pts">60pt</span>
-        <span class="aiq-cat-name">AIQ試験</span>
-        <p class="aiq-cat-desc">30問。AIがリアルタイムで生成・採点。問題漏洩が原理的に不可能な設計。</p>
+    <div class="score-trio">
+      <div class="score-cell">
+        <div class="score-cell-num">LX</div>
+        <div class="score-cell-label">Examinatio</div>
+        <p class="score-cell-sub">60点。30問をAIがリアルタイム生成・採点。問題漏洩は原理的に不可能。</p>
       </div>
-      <div class="aiq-cat">
-        <span class="aiq-cat-pts">40pt</span>
-        <span class="aiq-cat-name">申請論文</span>
-        <p class="aiq-cat-desc">指定テーマへの独自考察。科学的根拠・論理性・実践との一致を評価。</p>
+      <div class="score-cell">
+        <div class="score-cell-num">XL</div>
+        <div class="score-cell-label">Dissertatio</div>
+        <p class="score-cell-sub">40点。指定主題への独自考察。科学的根拠・論理・実践の一致を評価。</p>
       </div>
-      <div class="aiq-cat">
-        <span class="aiq-cat-pts">100pt</span>
-        <span class="aiq-cat-name">Total</span>
-        <p class="aiq-cat-desc">合否は固定スコアではなく、当年度の全受験者との相対評価で決まる。</p>
+      <div class="score-cell">
+        <div class="score-cell-num">C</div>
+        <div class="score-cell-label">Summa</div>
+        <p class="score-cell-sub">100点満点。合否は固定点ではなく、全受験者との相対で定まる。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ADMISSION OVERVIEW -->
+<!-- ════════ III. ADMISSION ════════ -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Admission</span>
-    <div class="admission-grid">
-      <div class="admission-card">
-        <span class="admission-step">Step 01</span>
-        <h3>申請論文の提出</h3>
-        <p>指定テーマに対する独自の考察論文を提出します。テーマは毎月更新されます。審査申請料 ¥5,000 が発生します。</p>
+    <span class="section-roman">III</span>
+    <h2 class="section-title">Admissio — 入会審査</h2>
+    <p class="lead" style="margin-bottom:40px;">入会は2段階の評価を経て承認される。各段階の評価基準・審査方法の詳細は、これを公開しない。</p>
+    <div class="steps-pair">
+      <div class="step-card">
+        <span class="step-card-num">Gradus I</span>
+        <h3>申請論文</h3>
+        <p>指定主題への独自考察を提出する。主題は毎月改められる。提出に際し、審査料 ¥5,000 を要する。</p>
       </div>
-      <div class="admission-card">
-        <span class="admission-step">Step 02</span>
+      <div class="step-card">
+        <span class="step-card-num">Gradus II</span>
         <h3>AIQ試験</h3>
-        <p>論文審査を通過した申請者のみ、ビデオ通話形式のAIQ試験に進みます。AIが出題・採点を行います。</p>
+        <p>論文審査を通過した者のみ、ビデオ通話による試験に進む。出題・採点はすべてAIが司る。</p>
       </div>
     </div>
-    <div class="admission-note">
-      ANSAは審査に通過する方法を案内しません。対策可能な試験に価値はないからです。審査の結果は最終的なものであり、不服申し立ては受け付けません。ただし、6ヶ月後に再申請することができます。
+    <div class="decree">
+      ANSAは審査を通過する方法を案内しない。対策可能な試験に価値はないからである。審査の結果は最終であり、不服を受け付けない。ただし、6ヶ月の後に再び門を叩くことは許される。
     </div>
-    <div class="fee-section">
-      <span class="section-label" style="margin-bottom: 24px;">Fee Structure</span>
+
+    <div style="margin-top:64px;">
+      <span class="section-label" style="margin-bottom:20px;">Tabula Pretiorum — 料金</span>
       <div class="fee-rows">
         <div class="fee-row">
           <span class="fee-name">審査申請料</span>
           <span class="fee-amount">¥5,000</span>
-          <span class="fee-note">論文提出時に支払い。合否に関わらず返金不可。</span>
+          <span class="fee-note">論文提出時に納める。合否・辞退を問わず返還なし。</span>
         </div>
         <div class="fee-row">
           <span class="fee-name">会員証発行手数料</span>
           <span class="fee-amount">¥5,000</span>
-          <span class="fee-note">合格者のみ。承認後30日以内に支払い。</span>
+          <span class="fee-note">合格者のみ。承認後30日以内に納める。</span>
         </div>
         <div class="fee-row">
           <span class="fee-name">年会費</span>
           <span class="fee-amount">¥5,000</span>
-          <span class="fee-note">入会月より毎年自動更新。未払いにより会員資格は即時停止。</span>
+          <span class="fee-note">毎年自動更新。未納をもって会員資格は停止される。</span>
         </div>
       </div>
     </div>
-    <div style="margin-top: 40px; text-align: center;">
-      <a href="admission.html" class="btn-primary">申請する</a>
-    </div>
+    <div class="center mt-48"><a href="admission.html" class="seal-btn">門を叩く</a></div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-section" style="border-top: 1px solid var(--border-2);">
-  <h2>Anti-Aging Intelligence Society</h2>
-  <p>ANSAは、老化に対して最も深く、最も誠実に向き合う者たちのための場所です。</p>
-  <a href="admission.html" class="btn-primary">審査に申し込む</a>
-  <a href="about.html" class="btn-secondary">AIQについて</a>
+<!-- ════════ CTA ════════ -->
+<section class="cta-section">
+  <span class="section-roman" style="text-align:center;display:block;">Finis</span>
+  <h2 class="section-title">Societas Intelligentiae<br>Anti-Senescentis</h2>
+  <p>ANSAは、老いに最も深く、最も誠実に向き合う者たちのための結社である。</p>
+  <a href="admission.html" class="seal-btn">審査に申し込む</a>
+  <a href="about.html" class="ghost-btn">AIQについて</a>
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <span class="footer-logo">ANSA</span>
-    <span class="footer-text">© 2026 Anti-Aging Intelligence Society. All rights reserved.</span>
-    <ul class="footer-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="admission.html">Admission</a></li>
-      <li><a href="members.html">Members</a></li>
-    </ul>
-  </div>
+  <svg class="emblem emblem-md footer-emblem" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+  <div class="footer-name">ANSA</div>
+  <p class="footer-latin">Per scientiam, ad iuventutem.</p>
+  <ul class="footer-links">
+    <li><a href="about.html">Scientia</a></li>
+    <li><a href="admission.html">Admissio</a></li>
+    <li><a href="members.html">Sodales</a></li>
+  </ul>
+  <p class="footer-copy">© MMXXVI · Anti-Aging Intelligence Society · Omnia iura reservata</p>
 </footer>
 
 </body>

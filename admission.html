@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admission — ANSA</title>
+  <title>Admissio — 入会審査 · ANSA</title>
   <meta name="description" content="ANSAへの申請プロセス。論文提出からAIQ試験、会員証発行まで。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -14,67 +17,71 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">ANSA</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About AIQ</a></li>
-      <li><a href="admission.html" class="active">Admission</a></li>
-      <li><a href="members.html">Members</a></li>
+      <li><a href="index.html">Domvs</a></li>
+      <li><a href="about.html">Scientia</a></li>
+      <li><a href="admission.html" class="active">Admissio</a></li>
+      <li><a href="members.html">Sodales</a></li>
     </ul>
     <a href="admission.html" class="nav-cta">Apply</a>
   </div>
 </nav>
 
 <div class="page-header">
-  <span class="page-header-label">Admission</span>
-  <h1>申請プロセス</h1>
-  <p>ANSAへの入会は、2段階の評価プロセスを経て承認されます。各段階における評価基準・審査方法の詳細は非公開とします。</p>
+  <svg class="emblem emblem-md" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+  <span class="page-header-roman">Admissio</span>
+  <h1>入会審査</h1>
+  <p class="lead">ANSAへの入会は、2段階の評価を経て承認される。各段階の評価基準・審査方法の詳細は、これを公開しない。</p>
 </div>
 
 <!-- PROCESS -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Process</span>
-
-    <div class="process-timeline">
-      <div class="process-step">
-        <div class="process-num">01</div>
-        <div class="process-content">
+    <span class="section-label">Iter — 道程</span>
+    <div class="timeline">
+      <div class="timeline-step">
+        <div class="timeline-num">I</div>
+        <div class="timeline-content">
           <h3>申請論文の提出</h3>
-          <p>申請フォームより、指定テーマへの考察論文（2,000〜5,000字）を提出してください。テーマは申請時に画面上に表示されます。テーマは毎月更新されます。</p>
-          <p style="margin-top: 12px;">論文の提出と同時に、審査申請料 ¥5,000 をお支払いいただきます。合否に関わらず返金はありません。</p>
+          <p>申請フォームより、指定主題への考察論文（2,000〜5,000字）を提出する。主題は申請時に画面へ示される。主題は毎月改められる。</p>
+          <p>提出と同時に、審査申請料 ¥5,000 を納める。合否を問わず、返還はない。</p>
         </div>
       </div>
-
-      <div class="process-step">
-        <div class="process-num">02</div>
-        <div class="process-content">
+      <div class="timeline-step">
+        <div class="timeline-num">II</div>
+        <div class="timeline-content">
           <h3>論文審査</h3>
-          <p>提出から24時間以内に、AIが論文を採点します（40点満点）。規定点数を満たした申請者にのみ、次のステップへの案内が届きます。</p>
-          <p style="margin-top: 12px;">採点結果は、採点理由の要約とともに通知されます。改善方法は案内しません。</p>
+          <p>提出から24時間以内に、AIが論文を採点する（40点満点）。規定の点数に達した者にのみ、次の段階への案内が届く。</p>
+          <p>採点結果は、その理由の要約とともに通知される。改善の方途は示さない。</p>
         </div>
       </div>
-
-      <div class="process-step">
-        <div class="process-num">03</div>
-        <div class="process-content">
+      <div class="timeline-step">
+        <div class="timeline-num">III</div>
+        <div class="timeline-content">
           <h3>AIQ試験</h3>
-          <p>論文審査を通過した申請者は、ビデオ通話形式のAIQ試験（30問・60分）に進みます。試験はカメラ・マイク・画面共有をすべて有効にした状態で実施されます。</p>
-          <p style="margin-top: 12px;">問題はAIがリアルタイムで生成します。試験に関する詳細な情報は、審査通過者にのみ案内されます。</p>
+          <p>論文審査を通過した者は、ビデオ通話によるAIQ試験（30問・60分）に進む。試験はカメラ・マイク・画面共有をすべて有効にした状態で行われる。</p>
+          <p>問題はAIがその場で生成する。試験の詳細は、通過者にのみ案内される。</p>
         </div>
       </div>
-
-      <div class="process-step">
-        <div class="process-num">04</div>
-        <div class="process-content">
-          <h3>合否通知</h3>
-          <p>試験終了後に仮スコアが表示されます。確定合否は、当月の全受験者データとの比較後、翌月末に通知されます。ANSAの合格基準は当年度の受験者全体における上位2%です。</p>
+      <div class="timeline-step">
+        <div class="timeline-num">IV</div>
+        <div class="timeline-content">
+          <h3>合否の通知</h3>
+          <p>試験の後に仮スコアを表示する。確定の合否は、当月の全受験者データとの比較の後、翌月末に通知される。ANSAの合格基準は、当年度の受験者全体における上位2%である。</p>
         </div>
       </div>
-
-      <div class="process-step">
-        <div class="process-num">05</div>
-        <div class="process-content">
+      <div class="timeline-step">
+        <div class="timeline-num">V</div>
+        <div class="timeline-content">
           <h3>会員証発行・入会</h3>
-          <p>合格通知後、会員証発行手数料 ¥5,000 をお支払いいただきます。お支払い確認後、物理会員証（郵送）とデジタルバッジを発行します。同時に年会費（¥5,000/年）の自動引落が開始されます。</p>
+          <p>合格の後、会員証発行手数料 ¥5,000 を納める。確認をもって、物理会員証（郵送）とデジタル印章を発行する。同時に、年会費（¥5,000／年）の自動更新が開始される。</p>
         </div>
       </div>
     </div>
@@ -84,22 +91,22 @@
 <!-- POLICY -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Policy</span>
-    <div class="admission-note" style="margin-bottom: 24px;">
-      ANSAは審査に通過する方法を案内しません。対策可能な試験に価値はないからです。審査の結果は最終的なものであり、不服申し立ては受け付けません。ただし、6ヶ月後に再申請することができます。
+    <span class="section-label">Lex — 規範</span>
+    <div class="decree" style="margin-bottom:28px;">
+      ANSAは審査を通過する方法を案内しない。対策可能な試験に価値はないからである。審査の結果は最終であり、不服を受け付けない。ただし、6ヶ月の後に再び門を叩くことは許される。
     </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border);">
-      <div style="background: var(--bg-2); padding: 24px;">
-        <p style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Re-application</p>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.8;">不合格後は6ヶ月間、再申請不可。再申請時も審査申請料が発生します。</p>
+    <div class="policy-trio">
+      <div class="policy-cell">
+        <div class="policy-cell-label">Iteratio</div>
+        <p>不合格の後は6ヶ月、再申請を認めない。再申請時も審査料を要する。</p>
       </div>
-      <div style="background: var(--bg-2); padding: 24px;">
-        <p style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Confidentiality</p>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.8;">審査基準・評価方法の詳細はすべて非公開です。会員もこれを外部に開示することはできません。</p>
+      <div class="policy-cell">
+        <div class="policy-cell-label">Secretum</div>
+        <p>審査基準・評価方法の詳細は非公開。会員もこれを外部に開示できない。</p>
       </div>
-      <div style="background: var(--bg-2); padding: 24px;">
-        <p style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">No Exceptions</p>
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.8;">いかなる事情においても、審査料の返金・免除・合格基準の調整は行いません。</p>
+      <div class="policy-cell">
+        <div class="policy-cell-label">Nulla Exceptio</div>
+        <p>いかなる事情でも、審査料の返還・免除・基準の調整は行わない。</p>
       </div>
     </div>
   </div>
@@ -108,22 +115,22 @@
 <!-- FEE -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Fee Structure</span>
+    <span class="section-label">Tabula Pretiorum — 料金</span>
     <div class="fee-rows">
       <div class="fee-row">
         <span class="fee-name">審査申請料</span>
         <span class="fee-amount">¥5,000</span>
-        <span class="fee-note">論文提出時に支払い。合否・辞退に関わらず返金不可。再申請時も再度発生。</span>
+        <span class="fee-note">論文提出時に納める。合否・辞退を問わず返還なし。再申請時も再度発生する。</span>
       </div>
       <div class="fee-row">
         <span class="fee-name">会員証発行手数料</span>
         <span class="fee-amount">¥5,000</span>
-        <span class="fee-note">合格者のみ。承認後30日以内に支払い。期限内入金がない場合は合格権利が消滅。</span>
+        <span class="fee-note">合格者のみ。承認後30日以内に納める。期限内に納入なき場合、合格の権利は消滅する。</span>
       </div>
       <div class="fee-row">
         <span class="fee-name">年会費</span>
         <span class="fee-amount">¥5,000</span>
-        <span class="fee-note">入会月より毎年自動更新。未払いにより会員資格は即時停止。復活には別途 ¥3,000 の再登録手数料が発生。</span>
+        <span class="fee-note">入会月より毎年自動更新。未納をもって資格は即時停止。復帰には別途 ¥3,000 を要する。</span>
       </div>
     </div>
   </div>
@@ -131,62 +138,66 @@
 
 <!-- APPLICATION FORM -->
 <section>
-  <div class="section-inner">
-    <span class="section-label">Application</span>
+  <div class="section-inner-narrow">
+    <span class="section-label">Petitio — 申請</span>
 
-    <div style="max-width: 600px;">
-      <div style="background: var(--bg-2); border: 1px solid var(--border); padding: 40px; margin-bottom: 32px;">
-        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px;">今月の論文テーマ</p>
-        <p id="essay-theme" style="font-size: 18px; color: var(--text); line-height: 1.6; margin-bottom: 20px; font-style: italic;">
-          「mTOR阻害と長寿の関係——現時点のエビデンスと、あなた自身の実践への応用」
-        </p>
-        <p style="font-size: 11px; color: var(--text-4);">2,000〜5,000字 &nbsp;·&nbsp; 日本語または英語</p>
+    <div class="theme-card">
+      <p class="theme-card-label">今月の論文主題</p>
+      <p class="theme-card-text">「mTOR阻害と長寿の関係 —— 現時点のエビデンスと、あなた自身の実践への応用」</p>
+      <p class="theme-card-meta">2,000〜5,000字 · 日本語または英語</p>
+    </div>
+
+    <form id="application-form" class="form-grid">
+      <div>
+        <label class="field-label">氏名 — Nomen</label>
+        <input type="text" required placeholder="山田 太郎">
       </div>
-
-      <form id="application-form" style="display: grid; gap: 20px;">
-        <div>
-          <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">氏名</label>
-          <input type="text" required placeholder="山田 太郎" style="width: 100%; background: var(--bg-2); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none; transition: border-color 0.2s;">
-        </div>
-        <div>
-          <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">メールアドレス</label>
-          <input type="email" required placeholder="your@email.com" style="width: 100%; background: var(--bg-2); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none; transition: border-color 0.2s;">
-        </div>
-        <div>
-          <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">申請論文</label>
-          <textarea required rows="12" placeholder="ここに論文本文を貼り付けてください。" style="width: 100%; background: var(--bg-2); border: 1px solid var(--border); color: var(--text); padding: 14px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none; resize: vertical; line-height: 1.8; transition: border-color 0.2s;"></textarea>
-          <p id="char-count" style="font-size: 11px; color: var(--text-4); margin-top: 6px; text-align: right;">0 / 2,000〜5,000字</p>
-        </div>
-        <div style="border: 1px solid var(--border-2); padding: 16px; background: var(--bg-3);">
-          <p style="font-size: 11px; color: var(--text-4); line-height: 1.8;">送信をもって、審査申請料 ¥5,000 の決済画面へ移動します。決済完了後に審査が開始されます。審査申請料は合否に関わらず返金されません。</p>
-        </div>
-        <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; padding: 18px;">審査に申し込む — ¥5,000</button>
-      </form>
-
-      <div id="form-sent" style="display: none; text-align: center; padding: 48px 0;">
-        <p style="font-size: 13px; color: var(--text-3); line-height: 1.9;">申請を受け付けました。<br>24時間以内に登録メールアドレスへ審査結果をお送りします。</p>
+      <div>
+        <label class="field-label">メールアドレス — Epistula</label>
+        <input type="email" required placeholder="your@email.com">
       </div>
+      <div>
+        <label class="field-label">申請論文 — Dissertatio</label>
+        <textarea required rows="12" placeholder="ここに論文本文を貼り付けてください。"></textarea>
+        <p id="char-count" style="font-size:0.85rem;color:var(--parch-3);margin-top:8px;text-align:right;">0 / 2,000〜5,000字</p>
+      </div>
+      <div class="notice">
+        送信をもって、審査申請料 ¥5,000 の決済画面へ移ります。決済の完了により審査が開始されます。審査申請料は、合否を問わず返還されません。
+      </div>
+      <button type="submit" class="seal-btn" style="width:100%;padding:18px;">審査に申し込む — ¥5,000</button>
+    </form>
+
+    <div id="form-sent" style="display:none;text-align:center;padding:56px 0;">
+      <svg class="emblem emblem-md" style="margin:0 auto 24px;" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+        <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+        <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+        <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+      </svg>
+      <p class="lead" style="text-align:center;">申請を受け付けた。<br>24時間以内に、登録の宛先へ審査の結果を送る。</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <a href="index.html" class="footer-logo">ANSA</a>
-    <span class="footer-text">© 2026 Anti-Aging Intelligence Society. All rights reserved.</span>
-    <ul class="footer-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="admission.html">Admission</a></li>
-      <li><a href="members.html">Members</a></li>
-    </ul>
-  </div>
+  <svg class="emblem emblem-md footer-emblem" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle class="emblem-line-bright" cx="120" cy="120" r="112" stroke-width="1.2" />
+    <circle class="emblem-line" cx="120" cy="120" r="82" stroke-width="0.8" />
+    <path class="emblem-snake" d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" />
+    <circle class="emblem-fill" cx="135" cy="64" r="7.5" />
+    <circle cx="137.5" cy="61.5" r="1.4" fill="#0a0a0c" />
+    <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
+    <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
+  </svg>
+  <div class="footer-name">ANSA</div>
+  <p class="footer-latin">Per scientiam, ad iuventutem.</p>
+  <ul class="footer-links">
+    <li><a href="about.html">Scientia</a></li>
+    <li><a href="admission.html">Admissio</a></li>
+    <li><a href="members.html">Sodales</a></li>
+  </ul>
+  <p class="footer-copy">© MMXXVI · Anti-Aging Intelligence Society · Omnia iura reservata</p>
 </footer>
-
-<style>
-  input:focus, textarea:focus { border-color: var(--gold-dim); }
-  input::placeholder, textarea::placeholder { color: var(--text-4); }
-  button[type="submit"]:hover { background: var(--gold); color: var(--bg); }
-</style>
 
 <script>
   const textarea = document.querySelector('textarea');
@@ -197,14 +208,14 @@
   textarea.addEventListener('input', () => {
     const len = textarea.value.length;
     charCount.textContent = `${len.toLocaleString()} / 2,000〜5,000字`;
-    charCount.style.color = (len >= 2000 && len <= 5000) ? '#c9a96e' : '#444';
+    charCount.style.color = (len >= 2000 && len <= 5000) ? 'var(--gold)' : 'var(--parch-3)';
   });
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: Stripe payment redirect + Supabase submission
     form.style.display = 'none';
     formSent.style.display = 'block';
+    window.scrollTo({ top: form.offsetTop - 120, behavior: 'smooth' });
   });
 </script>
 

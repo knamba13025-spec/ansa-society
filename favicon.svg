@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#0a0a0a"/>
-  <rect x="3" y="3" width="26" height="26" fill="none" stroke="#c9a96e" stroke-width="1"/>
-  <text x="16" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#c9a96e" letter-spacing="1">A</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <rect width="240" height="240" fill="#0a0a0c"/>
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#c2a45e" stroke-width="3"/>
+  <circle cx="120" cy="120" r="100" fill="none" stroke="#9c7f44" stroke-width="1.5"/>
+  <path d="M 104.99,63.98 A 58,58 0 1 1 135.01,63.98" fill="none" stroke="#c2a45e" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="135" cy="64" r="11" fill="#c2a45e"/>
+  <circle cx="138.5" cy="60.5" r="2.2" fill="#0a0a0c"/>
+  <path d="M 105,64 Q 116,72 128,67" fill="none" stroke="#c2a45e" stroke-width="5.5" stroke-linecap="round"/>
+  <polygon points="120,104 124.2,116.9 137.8,116.9 126.8,124.9 131,137.8 120,129.8 109,137.8 113.2,124.9 102.2,116.9 115.8,116.9" fill="#9c7f44"/>
 </svg>
