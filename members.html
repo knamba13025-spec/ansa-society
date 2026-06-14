@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members — ANSA</title>
+  <meta name="description" content="ANSA会員専用エリア。会員コンテンツ・年次交流会情報へのアクセス。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ANSA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About AIQ</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="members.html" class="active">Members</a></li>
+    </ul>
+    <a href="admission.html" class="nav-cta">Apply</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <span class="page-header-label">Members Only</span>
+  <h1>会員専用エリア</h1>
+  <p>このエリアはANSA会員のみアクセスできます。</p>
+</div>
+
+<!-- LOGIN -->
+<section>
+  <div class="section-inner">
+    <div style="max-width: 420px; margin: 0 auto;">
+
+      <div id="login-form-area">
+        <div style="background: var(--bg-2); border: 1px solid var(--border); padding: 40px; margin-bottom: 0;">
+          <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 28px;">Member Login</p>
+
+          <form id="login-form" style="display: grid; gap: 18px;">
+            <div>
+              <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">会員番号またはメールアドレス</label>
+              <input type="text" required placeholder="ANSA-0001 または your@email.com" style="width: 100%; background: var(--bg-3); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none;">
+            </div>
+            <div>
+              <label style="font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-4); display: block; margin-bottom: 8px;">パスワード</label>
+              <input type="password" required placeholder="••••••••••" style="width: 100%; background: var(--bg-3); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Georgia', serif; font-size: 13px; outline: none;">
+            </div>
+            <button type="submit" class="btn-primary" style="border: none; cursor: pointer; width: 100%; padding: 16px; margin-top: 8px;">ログイン</button>
+          </form>
+
+          <p style="font-size: 11px; color: var(--text-4); margin-top: 20px; text-align: center;">
+            パスワードを忘れた場合は <a href="mailto:contact@ansa.jp" style="color: var(--gold-dim); border-bottom: 1px solid var(--border);">こちら</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Non-member message -->
+      <div style="border-top: 1px solid var(--border-2); padding: 28px 0 0; margin-top: 32px; text-align: center;">
+        <p style="font-size: 12px; color: var(--text-4); line-height: 1.8;">
+          会員でない方は、まず<a href="admission.html" style="color: var(--gold); border-bottom: 1px solid var(--gold-dim);">審査に申し込む</a>ことができます。<br>
+          合格者のみがこのエリアにアクセスできます。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREVIEW OF MEMBER CONTENT (blurred/teaser) -->
+<section>
+  <div class="section-inner">
+    <span class="section-label">Member Content</span>
+    <p style="font-size: 13px; color: var(--text-4); margin-bottom: 32px; max-width: 560px;">以下は会員コンテンツの一部です。ログイン後に全文をお読みいただけます。</p>
+
+    <div style="display: grid; gap: 1px; background: var(--border);">
+
+      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
+        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Protocol &nbsp;·&nbsp; 会員 #0003</p>
+        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">ラパマイシン間欠投与6ヶ月の記録——血液データと体感の変化</h3>
+        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
+          2025年11月より週1回2mgの間欠投与を開始した。当初の懸念であった免疫抑制効果については、CRP・好中球数の推移から……投与翌日の倦怠感は3週目以降に消失。VO₂maxは投与前54.2から……mTORC2への影響を最小化するため……
+        </p>
+      </div>
+
+      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
+        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Analysis &nbsp;·&nbsp; 会員 #0001</p>
+        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">Horvath時計 vs DunedinPACE——どちらが「老化速度」を正確に反映するか</h3>
+        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
+          エピジェネティック時計の比較において、静的な生物学的年齢を推定するHorvathモデルと、老化「速度」を測定するDunedinPACEは……介入の効果検証には後者が優れる理由として……縦断的なデータを持たない場合における解釈の限界……
+        </p>
+      </div>
+
+      <div style="background: var(--bg-2); padding: 28px 32px; position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 30%, var(--bg-2) 80%); z-index: 1;"></div>
+        <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Biomarker &nbsp;·&nbsp; 会員 #0007</p>
+        <h3 style="font-size: 15px; font-weight: normal; color: var(--text); margin-bottom: 12px;">48歳・男性のバイオマーカー推移——NMN・断食・筋トレ介入から18ヶ月</h3>
+        <p style="font-size: 13px; color: var(--text-3); line-height: 1.85; filter: blur(3px); user-select: none;">
+          介入開始時のHbA1c 5.8%→現在5.2%。IGF-1は136→171 ng/mL。テストステロン総量……週3回の筋力トレーニングと週1回の36時間断食を組み合わせた場合のCRP変動は……
+        </p>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="#login-form-area" class="btn-primary" onclick="document.querySelector('#login-form-area input').focus(); return false;">ログインして全文を読む</a>
+    </div>
+  </div>
+</section>
+
+<!-- ANNUAL GATHERING TEASER -->
+<section>
+  <div class="section-inner">
+    <span class="section-label">Annual Gathering</span>
+    <div style="border: 1px solid var(--border); padding: 40px; max-width: 600px;">
+      <p style="font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-4); margin-bottom: 16px;">Next Event</p>
+      <h2 style="font-size: 20px; font-weight: normal; color: var(--gold); margin-bottom: 16px;">ANSA Annual Gathering 2026</h2>
+      <p style="font-size: 13px; color: var(--text-3); line-height: 1.9; margin-bottom: 20px;">
+        詳細は会員のみに案内されます。日時・場所・スピーカーの情報は、会員登録メールアドレスへ送付されます。
+      </p>
+      <p style="font-size: 11px; color: var(--text-4);">参加費 ¥8,000〜（会場・規模により変動） &nbsp;·&nbsp; 会員限定</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">ANSA</a>
+    <span class="footer-text">© 2026 Anti-Aging Intelligence Society. All rights reserved.</span>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="admission.html">Admission</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </div>
+</footer>
+
+<style>
+  input:focus { border-color: var(--gold-dim); }
+  input::placeholder { color: var(--text-4); }
+  button[type="submit"]:hover { background: var(--gold); color: var(--bg); }
+</style>
+
+<script>
+  document.getElementById('login-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    // TODO: Supabase auth
+    alert('現在、会員システムを準備中です。');
+  });
+</script>
+
+</body>
+</html>
