@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sodales — 会員 · ANSA</title>
-  <meta name="description" content="ANSA会員専用エリア。会員コンテンツ・年次集会。">
+  <title>Sodales — 会員エリア · ANSA</title>
+  <meta name="description" content="ANSA会員専用エリア。会員メニュー・会員限定コンテンツ・年次集会。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Domvs</a></li>
       <li><a href="about-ansa.html">De ANSA</a></li>
-      <li><a href="about.html">Scientia</a></li>
+      <li><a href="journal.html">Acta</a></li>
       <li><a href="admission.html">Admissio</a></li>
       <li><a href="members.html" class="active">Sodales</a></li>
     </ul>
@@ -38,8 +38,8 @@
     <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
   </svg>
   <span class="page-header-roman">Sodales</span>
-  <h1>会員専用エリア</h1>
-  <p class="lead">このエリアは、ANSA会員のみが立ち入ることを許される。</p>
+  <h1>会員エリア</h1>
+  <p class="lead">このエリアは、ANSA会員のみが立ち入ることを許されます。</p>
 </div>
 
 <!-- LOGIN -->
@@ -63,13 +63,56 @@
           パスワードを忘れた場合は <a href="mailto:contact@ansa-society.jp" class="link-gold" style="font-size:0.85rem;">こちら</a>
         </p>
       </div>
-
       <div style="border-top:1px solid var(--line-2);padding-top:28px;margin-top:36px;text-align:center;">
         <p style="font-size:0.95rem;color:var(--parch-3);line-height:1.85;">
-          会員でない方は、まず<a href="admission.html" class="link-gold" style="font-size:0.95rem;">審査に申し込む</a>ことができる。<br>
-          合格した者のみが、この門をくぐる。
+          会員でない方は、まず<a href="admission.html" class="link-gold" style="font-size:0.95rem;">入会審査に申し込む</a>ことができます。<br>
+          合格した方のみが、この門をくぐります。
         </p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBER MENU (会員メニュー) -->
+<section>
+  <div class="section-inner">
+    <span class="section-label">Menu Sodalium — 会員メニュー</span>
+    <div class="member-bar">
+      <div class="member-greet">ようこそ、<span>会員</span>各位</div>
+      <div class="member-id">ANSA · MEMBER AREA</div>
+    </div>
+    <p style="color:var(--parch-3);margin-bottom:32px;font-size:0.95rem;">ログイン後、以下のメニューをご利用いただけます。（プレビュー）</p>
+    <div class="member-menu">
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— I —</span>
+        <h3>会員限定コンテンツ</h3>
+        <p>会員が著したプロトコル・考察・バイオマーカー記録の全文を読む。</p>
+      </a>
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— II —</span>
+        <h3>記録を投稿する</h3>
+        <p>あなた自身の実践・学びをコミュニティに共有する。</p>
+      </a>
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— III —</span>
+        <h3>年次集会</h3>
+        <p>次回の集会の案内・申込。日程・会場の最新情報。</p>
+      </a>
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— IV —</span>
+        <h3>会員証・デジタル印章</h3>
+        <p>会員番号・物理会員証の確認と、デジタル印章のダウンロード。</p>
+      </a>
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— V —</span>
+        <h3>会員ディレクトリ</h3>
+        <p>公開を希望する会員どうしの、ゆるやかなつながり。</p>
+      </a>
+      <a class="member-tile" href="#" onclick="requireLogin(event)">
+        <span class="member-tile-roman">— VI —</span>
+        <h3>プロフィール・お支払い</h3>
+        <p>登録情報の変更、年会費の更新状況の確認。</p>
+      </a>
     </div>
   </div>
 </section>
@@ -77,30 +120,28 @@
 <!-- MEMBER CONTENT TEASER -->
 <section>
   <div class="section-inner">
-    <span class="section-label">Acta Sodalium — 会員の記録</span>
-    <p style="color:var(--parch-3);margin-bottom:36px;max-width:580px;">以下は会員が著した記録の一部である。ログインの後、全文を読むことができる。会員が書き、会員のみが読む。</p>
-
+    <span class="section-label">Acta Sodalium — 会員の記録（一部）</span>
+    <p style="color:var(--parch-3);margin-bottom:36px;max-width:580px;">以下は会員が著した記録の一部です。ログインの後、全文を読むことができます。会員が書き、会員のみが読む。</p>
     <div class="teaser-stack">
       <div class="teaser">
         <div class="teaser-veil"></div>
         <p class="teaser-tag">Protocollum · Sodalis №0003</p>
-        <h3>ラパマイシン間欠投与 六ヶ月の記録 —— 血液データと体感の変化</h3>
-        <p class="teaser-body">2025年11月より週1回2mgの間欠投与を開始した。当初の懸念であった免疫抑制効果については、CRP・好中球数の推移から……投与翌日の倦怠感は3週目以降に消失。VO₂maxは投与前54.2から……mTORC2への影響を最小化するため……</p>
+        <h3>毎日の習慣を六ヶ月、記録してわかったこと</h3>
+        <p class="teaser-body">睡眠・運動・食事の三つを軸に、半年にわたり記録を続けた。当初は変化が見えづらかったが、3週目以降に……日々の体調スコアと睡眠の質の相関は……無理のない範囲で続けることの意味は……</p>
       </div>
       <div class="teaser">
         <div class="teaser-veil"></div>
         <p class="teaser-tag">Analysis · Sodalis №0001</p>
-        <h3>Horvath時計 と DunedinPACE —— いずれが「老化速度」を正確に映すか</h3>
-        <p class="teaser-body">エピジェネティック時計の比較において、静的な生物学的年齢を推定するHorvathモデルと、老化「速度」を測定するDunedinPACEは……介入の効果検証には後者が優れる理由として……縦断的データを持たぬ場合の解釈の限界……</p>
+        <h3>「印象の若さ」をつくる要素を分解してみる</h3>
+        <p class="teaser-body">他者が受け取る印象は、肌や髪だけでなく、姿勢・表情・話し方の総合である。それぞれを切り分けて考えると……生活習慣がどこに効くのかが見えてくる……</p>
       </div>
       <div class="teaser">
         <div class="teaser-veil"></div>
-        <p class="teaser-tag">Biomarcor · Sodalis №0007</p>
-        <h3>四十八歳・男性のバイオマーカー推移 —— NMN・断食・筋力介入 十八ヶ月</h3>
-        <p class="teaser-body">介入開始時のHbA1c 5.8%→現在5.2%。IGF-1は136→171 ng/mL。テストステロン総量……週3回の筋力トレーニングと週1回の36時間断食を組み合わせた場合のCRP変動は……</p>
+        <p class="teaser-tag">Habitus · Sodalis №0007</p>
+        <h3>続けられる自己管理の仕組みづくり</h3>
+        <p class="teaser-body">意志の力に頼らず習慣を維持するために、記録の自動化と環境設計を試みた。チェックの手間を減らすことで継続率は……振り返りの頻度は……</p>
       </div>
     </div>
-
     <div class="center mt-40">
       <a href="#login-form-area" class="seal-btn" onclick="document.querySelector('#login-form-area input').focus(); return false;">ログインして全文を読む</a>
     </div>
@@ -114,7 +155,7 @@
     <div class="theme-card" style="text-align:left;">
       <p class="theme-card-label">Proximus Conventus — 次回</p>
       <p class="theme-card-text" style="font-size:24px;">ANSA Annual Gathering · MMXXVI</p>
-      <p style="font-size:1rem;color:var(--parch-3);line-height:1.9;margin-bottom:18px;">詳細は会員のみに案内される。日時・場所・登壇者の情報は、会員登録の宛先へ送られる。</p>
+      <p style="font-size:1rem;color:var(--parch-3);line-height:1.9;margin-bottom:18px;">詳細は会員のみに案内されます。日時・場所・登壇者の情報は、会員登録の宛先へ送られます。</p>
       <p class="theme-card-meta">参加費 ¥8,000〜（会場・規模により変動） · 会員限定</p>
     </div>
   </div>
@@ -136,11 +177,19 @@
     <li><a href="about-ansa.html">ANSAとは</a></li>
     <li><a href="about.html">AIQ</a></li>
     <li><a href="admission.html">入会審査</a></li>
+    <li><a href="journal.html">ジャーナル</a></li>
     <li><a href="members.html">会員</a></li>
     <li><a href="officers.html">役職者</a></li>
     <li><a href="faq.html">FAQ</a></li>
-    <li><a href="privacy.html">プライバシー</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
   </ul>
+  <ul class="footer-links footer-legal">
+    <li><a href="terms.html">利用規約</a></li>
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="refund.html">返金ポリシー</a></li>
+    <li><a href="tokusho.html">特定商取引法に基づく表記</a></li>
+  </ul>
+  <p class="footer-disclaimer">本コミュニティは、医療行為・診断・治療・若返り効果の保証を行うものではありません。アンチエイジングに関する知識共有と自己管理を目的とした会員制コミュニティです。</p>
   <p class="footer-copy">© MMXXVI · Anti-Aging Intelligence Society · Omnia iura reservata</p>
 </footer>
 
@@ -149,6 +198,11 @@
     e.preventDefault();
     alert('現在、会員システムを準備中です。');
   });
+  function requireLogin(e){
+    e.preventDefault();
+    document.querySelector('#login-form-area').scrollIntoView({behavior:'smooth'});
+    setTimeout(()=>document.querySelector('#login-form-area input').focus(), 400);
+  }
 </script>
 
 </body>

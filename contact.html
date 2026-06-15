@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concilium — 役職者紹介 · ANSA</title>
-  <meta name="description" content="ANSAの評議会と役職者。入会審査を司る者たち。">
+  <title>お問い合わせ · ANSA</title>
+  <meta name="description" content="ANSA（Anti-Aging Intelligence Society）へのお問い合わせ・入会に関するご相談。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -37,66 +37,60 @@
     <path class="emblem-snake" style="stroke-width:3.5" d="M 105,64 Q 116,70 127,66" />
     <polygon class="emblem-fill-2" points="120,109 122.47,116.6 130.46,116.6 123.99,121.3 126.47,128.9 120,124.2 113.53,128.9 116.01,121.3 109.54,116.6 117.53,116.6" />
   </svg>
-  <span class="page-header-roman">Concilium</span>
-  <h1>役職者紹介</h1>
-  <p class="lead">ANSAの理念を守り、入会審査を司るのは、評議会（Concilium）である。</p>
+  <span class="page-header-roman">Contactus</span>
+  <h1>お問い合わせ</h1>
+  <p class="lead">入会に関するご相談、その他のお問い合わせは、こちらよりお寄せください。</p>
 </div>
 
-<!-- COUNCIL -->
-<section>
-  <div class="section-inner">
-    <span class="section-label">Praefecti — 役職者</span>
-    <div class="officer-grid">
-
-      <div class="officer-card">
-        <div class="officer-seal">P</div>
-        <span class="officer-role">Praeses — 代表理事</span>
-        <div class="officer-name">難波 圭一</div>
-        <p>化粧品工場の立ち上げに携わり、処方と製造現場の双方を知る。アンチエイジングを「現場の科学」として捉える視座から、ANSAを創設。コミュニティの理念と基準の最終的な守護者。</p>
-      </div>
-
-      <div class="officer-card">
-        <div class="officer-seal">S</div>
-        <span class="officer-role">Secretarius — 事務局長</span>
-        <div class="officer-name">選任予定</div>
-        <p>申請受付、審査運営、会員管理を統括する。会員との連絡窓口を担い、コミュニティの日々の運営を支える。現在、選任の手続き中。</p>
-      </div>
-
-      <div class="officer-card">
-        <div class="officer-seal">C</div>
-        <span class="officer-role">Concilium — 評議員</span>
-        <div class="officer-name">選任予定</div>
-        <p>面談審査を担う評議員。長寿科学・臨床・栄養のいずれかに深い見識を持つ会員の中から選任される。氏名は、本人の同意に基づいてのみ公開される。</p>
-      </div>
-
-      <div class="officer-card">
-        <div class="officer-seal">C</div>
-        <span class="officer-role">Concilium — 評議員</span>
-        <div class="officer-name">選任予定</div>
-        <p>面談審査を担う評議員。受験者の知識・思考・実践を多角的に評価する。評議員は複数名で構成され、単独の判断が合否を決することはない。</p>
-      </div>
-
-    </div>
-    <p class="center" style="margin-top:28px;font-size:0.95rem;color:var(--parch-3);">評議員の氏名・経歴は、本人の同意なく公開されることはない。これは審査の独立性と公正を守るためである。</p>
-  </div>
-</section>
-
-<!-- GOVERNANCE -->
 <section>
   <div class="section-inner-narrow">
-    <span class="section-label">Gubernatio — 運営の原則</span>
-    <div class="prose" style="margin:0;">
-      <p>評議会は、ANSAの理念と入会基準を守ることを唯一の責務とする。会員数の拡大も、収益の最大化も、その目的とはしない。</p>
-      <p>役職者は、いかなる申請者に対しても便宜を図らない。縁故、地位、財力 ── これらは審査において一切の意味を持たない。評価されるのは、知性と、その身体への結実のみである。</p>
-      <p>評議員の選任、罷免、および評議会の構成は、代表理事の責任において行われる。</p>
+    <!--
+      ▼▼▼ 連携設定（枠）▼▼▼
+      フォーム送信先は未接続です。Formspree 等を使う場合：
+      1. https://formspree.io で無料アカウント作成 → フォーム作成 → エンドポイントURL取得
+      2. 下の <form> の action="" に、そのURL（例 https://formspree.io/f/xxxxxxx）を入れる
+      3. method="POST" のままでOK。送信内容が登録メールに届きます。
+    -->
+    <form id="contact-form" class="form-grid" action="" method="POST">
+      <div>
+        <label class="field-label">お名前 — Nomen</label>
+        <input type="text" name="name" required placeholder="山田 太郎">
+      </div>
+      <div>
+        <label class="field-label">メールアドレス — Epistula</label>
+        <input type="email" name="email" required placeholder="your@email.com">
+      </div>
+      <div>
+        <label class="field-label">ご用件 — Res</label>
+        <select name="topic" style="width:100%;background:var(--ink-3);border:1px solid var(--line);color:var(--parch);padding:14px 18px;font-family:'EB Garamond',serif;font-size:1.02rem;outline:none;">
+          <option>入会・審査について</option>
+          <option>料金・お支払いについて</option>
+          <option>会員サービスについて</option>
+          <option>取材・協業のご相談</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div>
+        <label class="field-label">お問い合わせ内容 — Nuntius</label>
+        <textarea name="message" required rows="8" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+      </div>
+      <div class="notice">
+        ご記入いただいた情報は、お問い合わせへの対応のみに利用します。詳しくは<a href="privacy.html" class="link-gold" style="font-size:0.9rem;">プライバシーポリシー</a>をご覧ください。
+      </div>
+      <button type="submit" class="seal-btn" style="width:100%;padding:18px;">送信する</button>
+    </form>
+
+    <div id="contact-sent" style="display:none;text-align:center;padding:48px 0;">
+      <p class="lead" style="text-align:center;">お問い合わせを受け付けました。<br>追って、登録の宛先へご連絡いたします。</p>
+    </div>
+
+    <div style="border-top:1px solid var(--line-2);margin-top:48px;padding-top:32px;text-align:center;">
+      <p style="color:var(--parch-3);font-size:0.95rem;line-height:1.85;">
+        メールでのお問い合わせ：<br>
+        <a href="mailto:contact@ansa-society.jp" class="link-gold" style="font-size:1rem;">contact@ansa-society.jp</a>
+      </p>
     </div>
   </div>
-</section>
-
-<section class="cta-section">
-  <h2 class="section-title">門を叩く</h2>
-  <p>評議会は、あなたが上位2%であることを証明する機会を、常に開いている。</p>
-  <a href="admission.html" class="seal-btn">審査に申し込む</a>
 </section>
 
 <footer>
@@ -130,6 +124,18 @@
   <p class="footer-disclaimer">本コミュニティは、医療行為・診断・治療・若返り効果の保証を行うものではありません。アンチエイジングに関する知識共有と自己管理を目的とした会員制コミュニティです。</p>
   <p class="footer-copy">© MMXXVI · Anti-Aging Intelligence Society · Omnia iura reservata</p>
 </footer>
+
+<script>
+  const cf = document.getElementById('contact-form');
+  cf.addEventListener('submit', (e) => {
+    // action未設定（枠）の場合はダミー送信。Formspree等のURLを入れたらこの分岐は外してOK。
+    if (!cf.getAttribute('action')) {
+      e.preventDefault();
+      cf.style.display = 'none';
+      document.getElementById('contact-sent').style.display = 'block';
+    }
+  });
+</script>
 
 </body>
 </html>
