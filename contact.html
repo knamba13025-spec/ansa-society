@@ -51,7 +51,9 @@
       2. 下の <form> の action="" に、そのURL（例 https://formspree.io/f/xxxxxxx）を入れる
       3. method="POST" のままでOK。送信内容が登録メールに届きます。
     -->
-    <form id="contact-form" class="form-grid" action="" method="POST">
+    <form id="contact-form" class="form-grid" action="https://formspree.io/f/mdavygjn" method="POST">
+      <input type="hidden" name="_subject" value="【ANSA】お問い合わせ">
+      <input type="hidden" name="種別" value="お問い合わせ">
       <div>
         <label class="field-label">お名前 — Nomen</label>
         <input type="text" name="name" required placeholder="山田 太郎">
@@ -127,13 +129,30 @@
 
 <script>
   const cf = document.getElementById('contact-form');
-  cf.addEventListener('submit', (e) => {
-    // action未設定（枠）の場合はダミー送信。Formspree等のURLを入れたらこの分岐は外してOK。
-    if (!cf.getAttribute('action')) {
-      e.preventDefault();
-      cf.style.display = 'none';
-      document.getElementById('contact-sent').style.display = 'block';
+  const cfBtn = cf.querySelector('button[type=submit]');
+  const cfBtnLabel = cfBtn.textContent;
+  cf.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const endpoint = cf.getAttribute('action');
+    if (endpoint) {
+      try {
+        cfBtn.disabled = true;
+        cfBtn.textContent = '送信中…';
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: new FormData(cf),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (!res.ok) throw new Error('send failed');
+      } catch (err) {
+        cfBtn.disabled = false;
+        cfBtn.textContent = cfBtnLabel;
+        alert('送信に失敗しました。お手数ですが、時間をおいて再度お試しください。');
+        return;
+      }
     }
+    cf.style.display = 'none';
+    document.getElementById('contact-sent').style.display = 'block';
   });
 </script>
 

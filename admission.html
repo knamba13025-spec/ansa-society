@@ -124,7 +124,9 @@
   <div class="section-inner-narrow">
     <span class="section-label">Petitio — お申し込み</span>
 
-    <form id="application-form" class="form-grid" action="" method="POST">
+    <form id="application-form" class="form-grid" action="https://formspree.io/f/mdavygjn" method="POST">
+      <input type="hidden" name="_subject" value="【ANSA】入会審査のお申し込み">
+      <input type="hidden" name="種別" value="入会審査の申込">
       <div>
         <label class="field-label">お名前またはニックネーム — Nomen</label>
         <input type="text" name="name" required placeholder="山田 太郎 / ニックネーム可">
@@ -213,15 +215,34 @@
   const form = document.getElementById('application-form');
   const formSent = document.getElementById('form-sent');
   const payBtn = form.querySelector('button[data-pay]');
+  const payBtnLabel = payBtn.textContent;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    const endpoint = form.getAttribute('action');
     const payUrl = payBtn.getAttribute('data-pay');
-    const actionUrl = form.getAttribute('action');
-    // 申請内容の送信先（Formspree等）が設定されていれば送信、その後決済へ
-    if (actionUrl) { form.submit(); return; }
+
+    // ① 申請内容を送信（Formspree）
+    if (endpoint) {
+      try {
+        payBtn.disabled = true;
+        payBtn.textContent = '送信中…';
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (!res.ok) throw new Error('send failed');
+      } catch (err) {
+        payBtn.disabled = false;
+        payBtn.textContent = payBtnLabel;
+        alert('送信に失敗しました。お手数ですが、時間をおいて再度お試しください。');
+        return;
+      }
+    }
+
+    // ② 決済へ（Stripeリンクがあれば遷移、なければ完了表示）
     if (payUrl) { window.location.href = payUrl; return; }
-    // どちらも未設定（枠）の場合はダミー完了表示
     form.style.display = 'none';
     formSent.style.display = 'block';
     window.scrollTo({ top: form.offsetTop - 120, behavior: 'smooth' });
